@@ -97,15 +97,9 @@ const OakValeLogo: React.FC<OakValeLogoProps> = ({
             fill="#B45309"
           />
 
-          <circle cx="75" cy="50" r="3" fill="#FBBF24" opacity="0.6">
-            <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="125" cy="50" r="3" fill="#FBBF24" opacity="0.6">
-            <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="0.5s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="100" cy="40" r="3" fill="#FBBF24" opacity="0.6">
-            <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" begin="1s" repeatCount="indefinite" />
-          </circle>
+          <circle cx="75" cy="50" r="3" fill="#FBBF24" opacity="0.8" />
+          <circle cx="125" cy="50" r="3" fill="#FBBF24" opacity="0.8" />
+          <circle cx="100" cy="40" r="3" fill="#FBBF24" opacity="0.8" />
         </motion.g>
       </svg>
     </motion.div>
