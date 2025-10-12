@@ -87,8 +87,8 @@ const FeaturedProperties: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center px-4 py-2 bg-green-100 rounded-full mb-4">
-            <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+          <div className="inline-flex items-center px-4 py-2 bg-green-100 mb-4">
+            <div className="w-2 h-2 bg-green-500 mr-2"></div>
             <span className="text-green-700 font-medium">Featured Properties</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -136,10 +136,10 @@ const FeaturedProperties: React.FC = () => {
 
                   {/* Top badges */}
                   <div className="absolute top-4 left-4 right-4 flex justify-between">
-                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-green-600 text-white px-3 py-1 text-sm font-medium">
                       Featured
                     </span>
-                    <button className="bg-white/20 backdrop-blur-sm p-2 rounded-full text-white hover:bg-white/30 transition-colors">
+                    <button className="bg-white/20 backdrop-blur-sm p-2 text-white hover:bg-white/30 transition-colors">
                       <Heart className="w-4 h-4" />
                     </button>
                   </div>
@@ -180,14 +180,14 @@ const FeaturedProperties: React.FC = () => {
                     <div className="flex space-x-2">
                       <button
                         onClick={() => handleBookTour(property.id)}
-                        className="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition-colors flex items-center"
+                        className="bg-amber-600 text-white px-4 py-2 hover:bg-amber-700 transition-colors flex items-center"
                       >
                         <Calendar className="w-4 h-4 mr-1" />
                         Book Tour
                       </button>
                       <Link
                         to={`/properties/${property.id}`}
-                        className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors flex items-center"
+                        className="bg-green-600 text-white px-4 py-2 hover:bg-green-700 transition-colors flex items-center"
                       >
                         <Eye className="w-4 h-4 mr-1" />
                         View Details
@@ -208,7 +208,7 @@ const FeaturedProperties: React.FC = () => {
         >
           <button 
             onClick={() => navigate('/properties')}
-            className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-green-700 hover:to-green-800 transition-all shadow-lg"
+            className="bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 font-bold text-lg hover:from-green-700 hover:to-green-800 transition-all shadow-lg"
           >
             View All Properties
           </button>

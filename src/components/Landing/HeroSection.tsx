@@ -129,7 +129,7 @@ const HeroSection: React.FC = () => {
                   <select
                     value={searchFilters.location}
                     onChange={(e) => setSearchFilters({...searchFilters, location: e.target.value})}
-                    className="w-full pl-10 pr-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg text-white focus:ring-2 focus:ring-green-500 focus:border-transparent appearance-none"
+                    className="w-full pl-10 pr-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white focus:ring-2 focus:ring-green-500 focus:border-transparent appearance-none"
                   >
                     <option value="" className="bg-gray-800 text-white">Select Location</option>
                     <option value="Kinoo" className="bg-gray-800 text-white">Kinoo</option>
@@ -147,7 +147,7 @@ const HeroSection: React.FC = () => {
                   placeholder="KSh 2M"
                   value={searchFilters.priceMin}
                   onChange={(e) => setSearchFilters({...searchFilters, priceMin: e.target.value})}
-                  className="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg text-white placeholder-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 />
               </div>
               
@@ -158,7 +158,7 @@ const HeroSection: React.FC = () => {
                   placeholder="KSh 20M"
                   value={searchFilters.priceMax}
                   onChange={(e) => setSearchFilters({...searchFilters, priceMax: e.target.value})}
-                  className="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg text-white placeholder-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  className="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-gray-300 focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 />
               </div>
               
@@ -167,7 +167,7 @@ const HeroSection: React.FC = () => {
                 <select
                   value={searchFilters.bedrooms}
                   onChange={(e) => setSearchFilters({...searchFilters, bedrooms: e.target.value})}
-                  className="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg text-white focus:ring-2 focus:ring-green-500 focus:border-transparent appearance-none"
+                  className="w-full px-4 py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white focus:ring-2 focus:ring-green-500 focus:border-transparent appearance-none"
                 >
                   <option value="" className="bg-gray-800 text-white">Any</option>
                   <option value="1" className="bg-gray-800 text-white">1+</option>
@@ -184,7 +184,7 @@ const HeroSection: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleSearch}
-                className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white rounded-xl font-bold text-lg transition-all shadow-2xl"
+                className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold text-lg transition-all shadow-lg"
               >
                 <Search className="w-5 h-5 mr-2" />
                 Search Properties
@@ -194,7 +194,7 @@ const HeroSection: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleViewProperties}
-                className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white rounded-xl font-bold text-lg transition-all shadow-2xl"
+                className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold text-lg transition-all shadow-lg"
               >
                 <Filter className="w-5 h-5 mr-2" />
                 View All Properties
@@ -219,7 +219,7 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-              className="group relative bg-gradient-to-br from-amber-500/90 to-yellow-600/90 backdrop-blur-md border-2 border-amber-400/50 rounded-xl p-6 hover:from-amber-400 hover:to-yellow-500 hover:border-amber-300 hover:shadow-2xl transition-all duration-300 text-center overflow-hidden"
+              className="group relative bg-gradient-to-br from-amber-500/90 to-yellow-600/90 backdrop-blur-md border-2 border-amber-400/50 p-6 hover:from-amber-400 hover:to-yellow-500 hover:border-amber-300 hover:shadow-xl transition-all duration-300 text-center overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <MapPin className="w-6 h-6 text-emerald-900 mx-auto mb-2 relative z-10 group-hover:scale-110 transition-transform duration-300" />
@@ -237,7 +237,7 @@ const HeroSection: React.FC = () => {
         transition={{ duration: 2, repeat: Infinity }}
       >
         <TransparentCard className="p-3">
-          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
+          <div className="w-6 h-10 border-2 border-white/60 flex justify-center">
             <motion.div 
               className="w-1 h-3 bg-gradient-to-b from-green-400 to-amber-400 rounded-full mt-2"
               animate={{ opacity: [0.3, 1, 0.3] }}

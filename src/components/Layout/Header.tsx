@@ -85,7 +85,7 @@ const Header: React.FC = () => {
                 {user.user_metadata?.role === 'admin' && (
                   <Link
                     to="/admin"
-                    className="bg-amber-600 text-white px-4 py-2 rounded-md font-medium hover:bg-amber-700 transition-colors"
+                    className="bg-amber-600 text-white px-4 py-2 font-medium hover:bg-amber-700 transition-colors"
                   >
                     Admin
                   </Link>
@@ -107,7 +107,7 @@ const Header: React.FC = () => {
                 </Link>
                 <Link
                   to="/signup"
-                  className="bg-green-600 text-white px-4 py-2 rounded-md font-medium hover:bg-green-700 transition-colors"
+                  className="bg-green-600 text-white px-4 py-2 font-medium hover:bg-green-700 transition-colors"
                 >
                   Sign Up
                 </Link>
@@ -185,7 +185,7 @@ const Header: React.FC = () => {
                   </Link>
                   <Link
                     to="/signup"
-                    className="block px-3 py-2 bg-green-600 text-white rounded-md font-medium text-center"
+                    className="block px-3 py-2 bg-green-600 text-white font-medium text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sign Up
