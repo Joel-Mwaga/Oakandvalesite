@@ -34,11 +34,15 @@ const HeroSection: React.FC = () => {
   };
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Green & Gold Gradient Background */}
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-green-800 to-emerald-900"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/20 via-transparent to-yellow-500/30"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(16,185,129,0.15),transparent_50%),radial-gradient(circle_at_70%_50%,rgba(245,158,11,0.15),transparent_50%)]"></div>
+        <img
+          src="/image.png"
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/80 via-green-800/80 to-emerald-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/30 via-transparent to-yellow-500/30"></div>
 
         {/* Animated Floating Elements */}
         <motion.div
