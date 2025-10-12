@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/image.png"
+          src="/20251011_151919.jpg"
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
