@@ -41,8 +41,7 @@ const HeroSection: React.FC = () => {
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900/80 via-green-800/80 to-emerald-900/80"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-amber-600/30 via-transparent to-yellow-500/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Animated Floating Elements */}
         <motion.div
