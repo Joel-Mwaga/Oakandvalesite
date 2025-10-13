@@ -201,7 +201,7 @@ const HeroSection: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.0 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mt-16"
         >
           {['Kinoo', 'Regen', 'Limuru', 'Ngecha'].map((area, index) => (
             <motion.button
@@ -212,33 +212,29 @@ const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-              className="group relative bg-gradient-to-br from-amber-500/90 to-yellow-600/90 backdrop-blur-md border-2 border-amber-400/50 p-6 hover:from-amber-400 hover:to-yellow-500 hover:border-amber-300 hover:shadow-xl transition-all duration-300 text-center overflow-hidden"
+              className="group relative bg-green-600/20 backdrop-blur-sm border border-green-400/30 px-4 py-2 hover:bg-green-600/30 hover:border-green-300/50 transition-all duration-300 text-center"
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <MapPin className="w-6 h-6 text-emerald-900 mx-auto mb-2 relative z-10 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-bold text-lg text-emerald-900 relative z-10">{area}</span>
-              <div className="absolute -bottom-1 -right-1 w-16 h-16 bg-emerald-500/20 rounded-full blur-xl group-hover:bg-emerald-400/30 transition-all duration-300"></div>
+              <MapPin className="w-4 h-4 text-green-400 mx-auto mb-1 relative z-10 group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-medium text-sm text-white relative z-10">{area}</span>
             </motion.button>
           ))}
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-10"
+      {/* Scroll Indicator - Mouse Shape */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white z-10 flex flex-col items-center"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <TransparentCard className="p-3">
-          <div className="w-6 h-10 border-2 border-white/60 flex justify-center">
-            <motion.div 
-              className="w-1 h-3 bg-gradient-to-b from-green-400 to-amber-400 rounded-full mt-2"
-              animate={{ opacity: [0.3, 1, 0.3] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </div>
-          <p className="text-xs text-white/80 mt-2 font-medium text-center">Explore More</p>
-        </TransparentCard>
+        <div className="w-6 h-10 border-2 border-white/70 rounded-full flex justify-center bg-white/10 backdrop-blur-sm">
+          <motion.div
+            className="w-1.5 h-3 bg-white rounded-full mt-2"
+            animate={{ y: [0, 8, 0], opacity: [0.8, 1, 0.8] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+          />
+        </div>
+        <p className="text-xs text-white/90 mt-3 font-medium">Explore More</p>
       </motion.div>
     </section>
   );
