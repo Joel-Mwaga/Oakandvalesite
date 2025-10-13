@@ -56,16 +56,6 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute top-40 right-32 w-32 h-32 bg-green-400/20 rounded-full blur-3xl"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            opacity: [0.4, 0.7, 0.4],
-            x: [0, -20, 0],
-            y: [0, 30, 0]
-          }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        />
-        <motion.div
           className="absolute bottom-32 left-40 w-48 h-48 bg-yellow-500/15 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
