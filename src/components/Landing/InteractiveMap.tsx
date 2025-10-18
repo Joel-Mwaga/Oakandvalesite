@@ -16,7 +16,7 @@ const InteractiveMap: React.FC = () => {
 
   const { isLoaded, loadError } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'AIzaSyBJdArhEo7ikjvca0F7q46zF1J10ZbY778'
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'AIzaSyDyYbyBXjQo6pK0CgbR0_2RdNqsjGi2_CE'
   });
 
   // Mock properties with coordinates along Waiyaki Way
