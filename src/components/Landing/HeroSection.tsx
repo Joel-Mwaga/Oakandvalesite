@@ -177,17 +177,17 @@ const HeroSection: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleSearch}
-                className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold text-lg transition-all shadow-lg"
+                className="flex items-center justify-center px-8 py-4 bg-green-600/30 hover:bg-green-600/40 backdrop-blur-sm border border-green-400/50 hover:border-green-300 text-white font-bold text-lg transition-all shadow-lg rounded-full"
               >
                 <Search className="w-5 h-5 mr-2" />
                 Search Properties
               </motion.button>
-              
+
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleViewProperties}
-                className="flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-bold text-lg transition-all shadow-lg"
+                className="flex items-center justify-center px-8 py-4 bg-green-600/30 hover:bg-green-600/40 backdrop-blur-sm border border-green-400/50 hover:border-green-300 text-white font-bold text-lg transition-all shadow-lg rounded-full"
               >
                 <Filter className="w-5 h-5 mr-2" />
                 View All Properties

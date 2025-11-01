@@ -284,16 +284,22 @@ const PropertyDetails: React.FC = () => {
               </div>
 
               <div className="space-y-3">
-                <button
+                <motion.button
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={handleBookTour}
-                  className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-3 rounded-xl font-semibold transition-all shadow-lg flex items-center justify-center"
                 >
                   <Calendar className="w-5 h-5 mr-2" />
                   Book a Tour
-                </button>
-                <button className="w-full border border-green-600 text-green-600 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors">
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-white border-2 border-green-600 text-green-600 py-3 rounded-xl font-semibold hover:bg-green-50 transition-all shadow-md"
+                >
                   Request Info
-                </button>
+                </motion.button>
               </div>
             </TransparentCard>
 

@@ -12,19 +12,19 @@ const InteractiveMap: React.FC = () => {
   });
 
   const [selectedProperty, setSelectedProperty] = useState<any>(null);
-  const [mapCenter, setMapCenter] = useState({ lat: -1.2345, lng: 36.7890 });
+  const [mapCenter, setMapCenter] = useState({ lat: -1.2308, lng: 36.7616 });
 
   const { isLoaded, loadError } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || 'AIzaSyDyYbyBXjQo6pK0CgbR0_2RdNqsjGi2_CE'
   });
 
-  // Mock properties with coordinates along Waiyaki Way
+  // Mock properties with accurate coordinates along Waiyaki Way corridor
   const properties = [
     {
       id: 1,
       title: 'Executive Villa in Kinoo Heights',
-      location: { lat: -1.2345, lng: 36.7890 },
+      location: { lat: -1.2280, lng: 36.7538 },
       price: 12500000,
       bedrooms: 5,
       bathrooms: 4,
@@ -34,7 +34,7 @@ const InteractiveMap: React.FC = () => {
     {
       id: 2,
       title: 'Modern Apartment in Regen',
-      location: { lat: -1.2456, lng: 36.7901 },
+      location: { lat: -1.2295, lng: 36.7620 },
       price: 8200000,
       bedrooms: 3,
       bathrooms: 2,
@@ -44,7 +44,7 @@ const InteractiveMap: React.FC = () => {
     {
       id: 3,
       title: 'Luxury Home in Limuru Gardens',
-      location: { lat: -1.2567, lng: 36.8012 },
+      location: { lat: -1.2342, lng: 36.7842 },
       price: 15000000,
       bedrooms: 6,
       bathrooms: 5,
@@ -54,7 +54,7 @@ const InteractiveMap: React.FC = () => {
     {
       id: 4,
       title: 'Serene Estate in Ngecha',
-      location: { lat: -1.2678, lng: 36.8123 },
+      location: { lat: -1.2415, lng: 36.8065 },
       price: 9800000,
       bedrooms: 4,
       bathrooms: 3,
