@@ -187,7 +187,7 @@ const HeroSection: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleViewProperties}
-                className="flex items-center justify-center px-8 py-4 bg-green-600/30 hover:bg-green-600/40 backdrop-blur-sm border border-green-400/50 hover:border-green-300 text-white font-bold text-lg transition-all shadow-lg rounded-full"
+                className="flex items-center justify-center px-8 py-4 bg-amber-600/30 hover:bg-amber-600/40 backdrop-blur-sm border border-amber-400/50 hover:border-amber-300 text-white font-bold text-lg transition-all shadow-lg rounded-full"
               >
                 <Filter className="w-5 h-5 mr-2" />
                 View All Properties
